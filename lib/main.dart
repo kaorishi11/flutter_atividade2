@@ -48,13 +48,10 @@ class _MyHomePageState extends State<MyHomePage> {
               isFollowing = !isFollowing;
             });
           },
-          icon: isFollowing
-              ? const Icon(Icons.check)
-              : const Icon(Icons.add),
+          icon: isFollowing ? const Icon(Icons.check) : const Icon(Icons.add),
           label: Text(isFollowing ? "Seguindo" : "Seguir"),
           style: ElevatedButton.styleFrom(
-            backgroundColor:
-                isFollowing ? Colors.green : Colors.blue,
+            backgroundColor: isFollowing ? Colors.green : Colors.blue,
           ),
         ),
       ),
